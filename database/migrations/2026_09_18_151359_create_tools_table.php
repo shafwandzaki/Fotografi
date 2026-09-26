@@ -1,0 +1,25 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('tools', function (Blueprint $table) {
+            $table->id();
+            $table->string('icon_tools');
+            $table->string('nama_tools');
+            $table->string('kategori');
+            $table->unsignedTinyInteger('percent');
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('tools');
+    }
+};
