@@ -37,7 +37,7 @@
       <x-svg-linkedin></x-linkedin>
     </a>
     <!-- Email -->
-    <a href="{{ $home['link_email'] }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-12 h-12 rounded-full border border-gray-600/50 text-white hover:border-white hover:text-white transition-colors">
+    <a href="mailto:{{ $home['link_email'] }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-12 h-12 rounded-full border border-gray-600/50 text-white hover:border-white hover:text-white transition-colors">
       <x-svg-email></x-email>
     </a>
     <!-- Instagram -->
