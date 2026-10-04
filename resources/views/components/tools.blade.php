@@ -7,7 +7,7 @@
         <p class="font-inter text-gray-400 text-center mb-16">Berikut ini adalah bebrapa tools yang saya gunakan untuk mengedit karya fotografi saya</p>
 
         <!-- Grid Container (4 Kolom) -->
-        <div class="reveal-group grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="reveal-group grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-6">
             @foreach ($tools as $tool)
                 <x-card-tools :tool="$tool"/>
             @endforeach
