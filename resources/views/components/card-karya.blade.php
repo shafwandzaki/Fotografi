@@ -5,7 +5,7 @@
     @click="selected = {{ Illuminate\Support\Js::from($karyas) }}"
     class=" reveal-item flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:text-blue-300">
         
-        <img src="{{ asset($karyas['img_karya']) }}" alt="{{ $karyas['nama_karya'] }}" class="w-full h-full object-cover bg-gray-700" />
+        <img src="{{ asset($karyas['img_karya']) }}" alt="{{ $karyas['nama_karya'] }}" class="w-full h-48 object-cover bg-gray-700" />
         <div class="p-6 flex flex-col grow">
             <p class="text-xl font-bold mb-3 leading-snug">{{ $karyas['nama_karya'] }}</p>
             <p class="text-gray-300 text-sm leading-relaxed">

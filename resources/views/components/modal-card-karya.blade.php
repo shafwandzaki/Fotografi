@@ -12,7 +12,7 @@
         <template x-if="selected">
             <div>
                 <h2 class="text-xl font-bold mb-4" x-text="selected.nama_karya"></h2>
-                <img :src="selected.img_karya || '{{ asset('icon/logo_fotografi.png') }}'" class="w-full h-56 object-cover rounded-xl mb-6" />
+                <img :src="selected.img_karya || '{{ asset('icon/logo_fotografi.png') }}'" class="w-full h-full object-cover rounded-xl mb-6" />
                 <p class="text-gray-300 leading-relaxed" x-text="selected.deskripsi"></p>
                 <a :href="selected.link_karya" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white hover:text-blue-500 text-sm font-semibold mt-8">
                     Lihat Project
