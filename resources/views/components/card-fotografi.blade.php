@@ -26,9 +26,6 @@
                     <p class="truncate font-jetbrains text-[10px] text-gray-400">{{ $foto['meta'] }}</p>
                 @endif
             </div>
-            <span class="shrink-0 rounded bg-white px-3 py-1 font-jetbrains text-[10px] font-medium uppercase text-black">
-                Lihat →
-            </span>
         </div>
     </article>
 
