@@ -1,13 +1,15 @@
 @props(['tool'])
 
-<div class="reveal-item bg-white/5  border border-white/10 rounded-2xl p-6 flex flex-col justify-between shadow-lg hover:text-blue-300 transition-all duration-300">
+<div class="reveal-item bg-white/3 border border-white/10 rounded-2xl p-6 flex flex-col justify-between shadow-lg shadow-black/30 backdrop-blur-xs transition duration-300 hover:-translate-y-1 hover:border-white/15 hover:bg-white/5 hover:shadow-white/10">
     <div class="flex items-center gap-2 sm:gap-3 mb-4">
         <img src="{{ $tool['icon_tools'] }}" alt="coba" class="w-8 h-8 object-contain" />
         <p class="text-lg sm:text-xl font-semibold sm:font-bold">{{ $tool['nama_tools'] }}</p>
     </div>
     <p class="text-gray-400 text-sm mb-2">{{ $tool['kategori'] }}</p>
-    <p class="text-xs text-gray-300 flex items-center gap-2 font-medium">
-        <span class="w-2 h-2 rounded-full bg-white inline-block"></span>
-        {{ $tool['percent'] }}%
-    </p>
+    <div class="flex flex-col gap-1">
+        <div class="w-full bg-white/10 rounded-full h-1.5">
+            <div data-bar="{{ $tool['percent'] }}" class="bg-white h-full rounded-full w-0 transition-[width] duration-1000 ease-out"></div>
+        </div>
+        <p data-count="{{ $tool['percent'] }}" class="text-xs text-gray-300 font-medium">0%</p>
+    </div>
 </div>

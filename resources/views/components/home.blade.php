@@ -22,10 +22,10 @@
 
   {{-- Tombol --}}
   <div class="mb-8 flex flex-wrap items-center gap-8">
-    <button class="rounded-xl bg-white px-8 py-2 text-lg font-semibold text-black transition-colors hover:bg-white/70">
+    <button class="rounded-xl bg-white px-8 py-2 text-lg font-semibold text-black transition-colors hover:bg-white/70 cursor-pointer">
       <a href="https://potofoliodzaki.infinityfreeapp.com" target="_blank" rel="noopener noreferrer">Portofolio</a>
     </button>
-    <button class="rounded-xl border border-white/20 bg-white/10 px-8 py-2 text-lg font-semibold transition-colors hover:bg-white/30">
+    <button class="rounded-xl border border-white/20 bg-white/10 px-8 py-2 text-lg font-semibold transition-colors hover:bg-white/30 cursor-pointer">
       <a href="#karya">Karya</a>
     </button>
   </div>

@@ -2,15 +2,15 @@
     x-data="{ open: false, scrolled: false }"
     x-init="
         scrolled = window.scrollY > 10;
-        window.addEventListener('scroll', () => {
-            scrolled = window.scrollY > 10;
-        });
-    "
+        window.addEventListener('scroll', () => {scrolled = window.scrollY > 10;});"
+        class="sticky top-0 z-50 flex items-center justify-between px-8 py-4">
+
+    <div
     :class="scrolled
-        ? 'bg-white/3 backdrop-blur-lg border-b border-white/5 px-8 py-4'
-        : 'bg-transparent backdrop-blur-none border-b border-transparent px-8 py-4'"
-    class="sticky top-0 z-50 flex items-center justify-between"
->
+        ? 'bg-white/3 backdrop-blur-lg border-b border-white/5'
+        : 'bg-transparent backdrop-blur-none'"
+        class="absolute inset-0 -z-10 border-b border-transparent transition-colors duration-300"></div>
+
     <a href="#home" class="flex items-center gap-4">
         <img src="icon/logo_fotografi.png" alt="Logo" class="w-8 h-8 rounded-lg">
         <h2 class="text-xl font-bold text-white">Fotografi</h2>
@@ -18,11 +18,11 @@
 
     <!-- Menu desktop -->
     <ul class="hidden md:flex items-center gap-10 text-gray-400 font-normal">
-        <li><a href="#home" class="hover:text-blue-600 transition-colors">Home</a></li>
-        <li><a href="#fotografi" class="hover:text-blue-600 transition-colors">Fotografi</a></li>
-        <li><a href="#gear" class="hover:text-blue-600 transition-colors">Gear</a></li>
-        <li><a href="#tools" class="hover:text-blue-600 transition-colors">Tools</a></li>
-        <li><a href="#karya" class="hover:text-blue-600 transition-colors">Karya</a></li>
+        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+        <li><a href="#fotografi" class="hover:text-white transition-colors">Fotografi</a></li>
+        <li><a href="#gear" class="hover:text-white transition-colors">Gear</a></li>
+        <li><a href="#tools" class="hover:text-white transition-colors">Tools</a></li>
+        <li><a href="#karya" class="hover:text-white transition-colors">Karya</a></li>
     </ul>
 
     {{-- Mobile --}}
@@ -48,12 +48,12 @@
         x-transition:leave-start="opacity-100 translate-y-0"
         x-transition:leave-end="opacity-0 -translate-y-2"
         @click.outside="open = false"
-        class="md:hidden absolute top-full left-0 w-full bg-white/10 backdrop-blur-lg border-b border-white/10 flex flex-col items-center gap-6 py-6 text-gray-300 font-normal"
+        class="md:hidden absolute top-full left-0 w-full bg-white/3 backdrop-blur-lg border-b border-white/10 flex flex-col items-center gap-6 py-6 text-gray-400 font-normal"
     >
-        <li><a href="#home" @click="open = false" class="hover:text-blue-500 transition-colors">Home</a></li>
-        <li><a href="#fotografi" @click="open = false" class="hover:text-blue-500 transition-colors">Fotografi</a></li>
-        <li><a href="#gear" @click="open = false" class="hover:text-blue-500 transition-colors">Gear</a></li>
-        <li><a href="#tools" @click="open = false" class="hover:text-blue-500 transition-colors">Tools</a></li>
-        <li><a href="#karya" @click="open = false" class="hover:text-blue-500 transition-colors">Karya</a></li>
+        <li><a href="#home" @click="open = false" class="hover:text-white transition-colors">Home</a></li>
+        <li><a href="#fotografi" @click="open = false" class="hover:text-white transition-colors">Fotografi</a></li>
+        <li><a href="#gear" @click="open = false" class="hover:text-white transition-colors">Gear</a></li>
+        <li><a href="#tools" @click="open = false" class="hover:text-white transition-colors">Tools</a></li>
+        <li><a href="#karya" @click="open = false" class="hover:text-white transition-colors">Karya</a></li>
     </ul>
 </nav>
